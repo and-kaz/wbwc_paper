@@ -1,0 +1,29 @@
+######
+## ODE system for classical cod-ant decoding 
+#####
+### 
+#####
+SCHEME_IMAGE = model_scheme_nc.png
+***STATES***
+R1 = er + q2 * (C2_nc + C2_c) + k4c * (C4_c) + k4nc * (C4_nc) - k1 * (R1) * (T_c + T_nc) - dr * (R1);
+
+T_c = ec + q2 * (C2_c) + k4c * (C4_c) - k1 * (R1) * (T_c) - dc * (T_c)
+
+C2_c = k1 * (R1) * (T_c) + q3c * (C3_c) - q2 * (C2_c) - k2 * (C2_c);
+
+C3_c = k2 * (C2_c) + q4c * (C4_c) - q3c * (C3_c) - k3 * (C3_c);
+
+C4_c = k3 * (C3_c) - q4c * (C4_c) - k4c * (C4_c);
+
+T_nc = enc + q2 * (C2_nc) + k4nc * (C4_nc) - k1 * (R1) * (T_nc) - dnc * (T_nc);
+
+C2_nc = k1 * (R1) * (T_nc) + q3nc * (C3_nc) - q2 * (C2_nc) - k2 * (C2_nc);
+
+C3_nc = k2 * (C2_nc) + q4nc * (C4_nc) - q3nc * (C3_nc) - k3 * (C3_nc);
+
+C4_nc = k3 * (C3_nc) - q4nc * (C4_nc) - k4nc * (C4_nc);
+
+P_r = k4c * (C4_c);
+
+P_w = k4nc * (C4_nc); 
+***END***

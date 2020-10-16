@@ -1,0 +1,11 @@
+name: interactive_matplotlib
+channels:
+  - conda-forge
+dependencies:
+  - python>3.6
+  - notebook>5.2
+  - numpy
+  - matplotlib
+#  - pylab
+  - ipywidgets=7
+#  - scipy.constants

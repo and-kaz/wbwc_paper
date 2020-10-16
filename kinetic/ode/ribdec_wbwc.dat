@@ -1,0 +1,35 @@
+######
+## ODE system for cod-ant decoding + wbwc
+#####
+###
+#####
+SCHEME_IMAGE = model_scheme_wbwc.png
+***STATES***
+R1 = er + q2 * (C2_nc_k + C2_c) + k4c * (C4_c + C4_nc_WC) + k4wb * (C4_nc_wb) - k1 * (R1) * (T_c + T_nc) - dr * (R1);
+
+T_c = ec + q2 * (C2_c) + k4c * (C4_c) - k1 * (R1) * (T_c) - dc * (T_c)
+
+C2_c = k1 * (R1) * (T_c) + q3c * (C3_c) - q2 * (C2_c) - k2 * (C2_c);
+
+C3_c = k2 * (C2_c) + q4c * (C4_c) - q3c * (C3_c) - k3 * (C3_c);
+
+C4_c = k3 * (C3_c) - q4c * (C4_c) - k4c * (C4_c);
+
+T_nc = enc + q2 * (C2_nc_k) + k4c * (C4_nc_WC) - k1 * (R1) * (T_nc) - dnc * (T_nc);
+
+C2_nc_k = k1 * (R1) * (T_nc) + q3nc * (C3_nc_wb) + hrm * (C2_nc_e) - hfm * (C2_nc_k) - q2 * (C2_nc_k) - k2 * (C2_nc_k);
+
+C2_nc_e = hfm * (C2_nc_k) + q3c * (C3_nc_WC) - hrm * (C2_nc_e) - k2 * (C2_nc_e);
+
+C3_nc_wb = k2 * (C2_nc_k) + q4nc * (C4_nc_wb) + hro * (C3_nc_WC) - hfo * (C3_nc_wb) - q3nc * (C3_nc_wb) - k3 * (C3_nc_wb);
+
+C3_nc_WC = k2 * (C2_nc_e) + q4c * (C4_nc_WC) + hfo * (C3_nc_wb) - hro * (C3_nc_WC) - q3c * (C3_nc_WC) - k3 * (C3_nc_WC);
+
+C4_nc_wb = k3 * (C3_nc_wb) + hrc * (C4_nc_WC) - hfc * (C4_nc_wb) - q4nc * (C4_nc_wb) - k4wb * (C4_nc_wb);
+
+C4_nc_WC = k3 * (C3_nc_WC) + hfc * (C4_nc_wb) - hrc * (C4_nc_WC) - q4c * (C4_nc_WC) - k4c * (C4_nc_WC);
+
+P_r = k4c * (C4_c);
+
+P_w = k4c * (C4_nc_WC) + k4wb * (C4_nc_wb); 
+***END***
