@@ -22,7 +22,8 @@ The repository containts scripts used for the following analyses in the accompan
 		interactive_solutions/
 			contains Jupyter notebook that can interactively solve and plot the analytical solutions of the kinetic models;
 			a link to Binder should be there.
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/and-kaz/wbwc_paper/main?filepath=%2Ftree%2Fmain%2Fkinetic%2Finteractive_solutions%2Fwbwc_decoding_analytical_solutions.ipynb)
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/and-kaz/wbwc_paper/main?filepath=%2Fkinetic%2Finteractive_solutions%2Fwbwc_decoding_analytical_solutions.ipynb)
 
 ### 3. Sripts to setup, analyze and visualize QM/MM umbrella sampling (US) simulations:
 	umbrella_sampling/
