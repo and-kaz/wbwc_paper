@@ -6,6 +6,7 @@ dependencies:
   - notebook>5.2
   - numpy
   - matplotlib
+  - ipympl
 #  - pylab
   - ipywidgets=7
 #  - scipy.constants
