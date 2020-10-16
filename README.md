@@ -31,6 +31,6 @@ Link to the interactive_solutions on Binder:
 		perform alignemnt to obtain frames and images for pathCV (2 Tcl scripts for VMD);
 		prepare inputs and analyze results (2 Python scripts);
 		an example Slurm job script to run QM/MM US calculations on a cluster.
-		It is suggested to merge this folder with the folder on Figshare:
+		It is suggested to merge this folder with the folder us_setup_example on Figshare:
 		https://doi.org/10.6084/m9.figshare.c.5178074.v1
 		which contains the files necessary to setup the calculations. It also contains final colvar trajectories for one system as an example.
